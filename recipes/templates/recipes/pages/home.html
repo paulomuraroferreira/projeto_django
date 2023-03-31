@@ -1,17 +1,15 @@
 {% include 'recipes/partials/head.html' %}
 
 <body>
-    <header class="main-header-container"> <!-- Container maior --> 
-        <div class="main-header container"> <!-- Container menor --> 
-            <h1> 
-                <a class="main-logo" href="/"> <!-- Link que aponta para a home --> 
-                    <i class="fas fa-solid fa-utensils main-logo-icon"></i> 
-                    <span class="main-logo-text">Recipes </span>    
-                </a>
-            <h1>    
+    {% include 'recipes/partials/header.html' %}
+    {% include 'recipes/partials/search.html' %}
+
+    <main class="main.main-container-container">
+        <div class="main-content main-container-list container">
+            {% include 'recipes/partials/recipe.html' %}
         </div>
-
-    </header>
-
+    </main>      
+    
+    {% include 'recipes/partials/footer.html' %}
 </body>
 </html>
